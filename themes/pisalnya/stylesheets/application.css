@@ -16,29 +16,6 @@ body {
 	font: normal 12px "lucida grande", verdana, arial, helvetica, sans-serif;
 }
 
-#page {
-  background: rgba(255,255,255,0.7);
-  min-height: 605px;
-  margin: 137px auto 0;
-  padding: 2em;
-}
-
-#container {
-  background: url(/images/theme/back_top.png) no-repeat 50% top;
-}
-
-#header h1 .span,
-#header .h2 {
-  display: none;
-}
-
-#header h1 {
-  background-color: red;
-  margin-left: -350px;
-  padding: 40px 50%;
-  width: 300px;
-}
-
 input,
 textarea { font: normal 12px "bitstream vera sans", verdana, sans-serif; }
 
