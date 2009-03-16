@@ -34,7 +34,7 @@ body {
 }
 
 #sidebar {
-	width: 200px;
+	width: 189px;
 }
 
 #footer {
@@ -49,9 +49,9 @@ body {
 
 /* BEGIN: Right Sidebar */
 #sidebar {
-	float: right; text-align: left;
-	padding-left: 15px; 
-	border-left: 1px dotted #ddd; 
+	float: left; text-align: left;
+	padding-left: 46px; 
+	
 }
 #content {
 	float: left;

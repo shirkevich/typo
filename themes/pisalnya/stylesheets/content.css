@@ -53,17 +53,20 @@
 #content h3,
 #content h4,
 #content h5 { 
-	font-family: "lucidamac bold", "lucida grande", arial, sans-serif; 
+	font-family: "georgia", "lucida grande", arial, sans-serif; 
 	letter-spacing: -1px;
+	font-stylie: italic;
 }
 
 #content h1 { 
 	font-size: 24px;
-	margin: 0 0 0.3em;	
+		margin: 0 0 0.3em;	
 }
 
 #content h2 { 
 	font-size: 22px;
+	font-style: italic;
+	color: #21516d;
 	margin: 0 0 0.3em;	
 }
 
@@ -79,11 +82,11 @@
 }
 
 #content h5 {
-	font-size: 18px;
-	background: #ffd;
+	font-size: 22px;
+	font-style: italic;
+	color:#757575;
 	margin: 1.2em 0 0.3em;	
-	border-bottom: 1px dotted #aaa;
-}
+	}
 
 #content p {
 	line-height: 15px; 
@@ -130,14 +133,16 @@
 
 #content .atomentry .title {
 	font-size: 24px;
+  font-color: #21516d;
 	line-height: 94%;
-	letter-spacing: -1.5px; 
+	letter-spacing: -1.5px;
+	 
 	margin: 0;
 }
 
 #content .atomentry .title a:link,
 #content .atomentry .title a:visited { 
-	color: #930;
+	color: #21516d;
 	text-decoration: none;
 }
 
@@ -147,11 +152,12 @@
 	background: transparent;
 }
 
-#content .atomentry .title .comment_count { color: #eee; }
+#content .atomentry .title .comment_count { color: #eee; display: none; }
 
 #content .atomentry .author {
 	color: #bbb;
-	font: normal 16px/14px "lucidamac bold", "lucida grande", arial, verdana, sans-serif;
+	font: normal 16px/14px "georgia", "lucida grande", arial, verdana, sans-serif;
+	font-style: italic;
 	letter-spacing: -1px;
 	margin: 0 0 1em;
 }
@@ -170,21 +176,37 @@
 #content .atomentry .content {}
 
 #content .atomentry ul.meta { 
-	font-size: 10px;
-	background: #eee;
-	margin: 0; padding: 5px;
-	border: 1px solid #ddd;
-	list-style-type: none;
+	font-size: 13px;
+		margin: 12px; padding: 5px;
+		list-style-type: none;
 }
 
 #content .atomentry ul.meta li { 
-	line-height: 13px;
+	float: left;
+	line-height: 18px;
 	margin: 0; padding: 0;
+	width: 70%;
+		
 }
+
+#content .atomentry ul.meta li:first-child { 
+  width: 20%;
+  font-style: italic;
+}
+
+#content .atomentry ul.meta li:last-child { 
+  width: 10%;
+  
+}
+
 
 #content .atomentry .meta a:link,
 #content .atomentry .meta a:visited {
-	color: #555;
+	color: #000;
+}
+
+#content .tags a:link {
+background: #41dbb8; 
 }
 
 #content .atomentry .meta a:hover,
@@ -202,7 +224,8 @@
 
 #content .comment,
 #content .trackback {
-	border: 2px solid #ddd;
+	/*border: 2px solid #ddd;*/
+	background: #f1f1f1;
 	margin: 0 0 1.5em; padding: 1em;
 }
 
@@ -263,6 +286,9 @@
 	padding: 3px;
 }
 
+#content disabled prev_page {
+  background-image: url(/images/arrow_left.png);
+}
 /*--------------------------------------------------------------
  Sidebar
  --------------------------------------------------------------*/
@@ -271,9 +297,10 @@
 }
 
 #sidebar h3 { 
-	font: bold 14px "lucidamac bold", "lucida grande", verdana, arial, helvetica, sans-serif;
+	font: bold 14px "georgia", "lucida grande", verdana, arial, helvetica, sans-serif;
 	margin: 0 0 0.5em;
 }
+
 
 #sidebar h3 a:link,
 #sidebar h3 a:visited {
@@ -292,7 +319,10 @@
 
 #sidebar li { 
 	margin: 0;
-	padding: 1px 0;
+	padding: 3px 0;
+	background: url(/images/theme/li-line.png) no-repeat top left;
+	font-size: 1.5em;
+	font-style: normal;
 }
 
 #sidebar em { font-style: normal; }
