@@ -5,7 +5,6 @@
   </h2>
 
   <p class="author">
-    <%= _("Posted by")%> <cite><%= author_link(article) %></cite>
     <abbr class="published" title="<%= article.published_at.xmlschema %>"><%= js_distance_of_time_in_words_to_now article.published_at %></abbr>
   </p>
 
@@ -26,12 +25,8 @@
   <ul class="meta">
     <%= content_tag(:li, category_links(article), :class => 'categories') unless article.categories.empty? %>
     <%= content_tag(:li, tag_links(article), :class => 'tags') unless article.tags.empty? %>
-    <li><%= _("Meta") %>
-      <%= trackbacks_link(article) << ',' if article.allow_pings? %>
-      <%= comments_link(article) << ',' if article.allow_comments? %>
-      <a href="<%= article.permalink_url %>" rel="bookmark"><%=_("permalink")%></a>,
-      <a href="<%= @auto_discovery_url_rss %>">rss</a>,
-      <a href="<%= @auto_discovery_url_atom %>">atom</a>
+    <li class="comments-counter">
+      <%= link_to_permalink(article, article.published_comments.size) if  article.allow_comments? %>
     </li>
   </ul>
 </div>
