@@ -212,7 +212,7 @@
 }
 
 #content li.comments-counter {
-    background-image: url(/images/theme/back-comcount.png);
+    background: transparent url(/images/theme/back-comcount.png) no-repeat;
 }
 
 #content .atomentry .meta a:hover,
