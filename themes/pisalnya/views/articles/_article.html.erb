@@ -14,7 +14,7 @@
     <% if article.extended? -%>
       <div class="extended">
         <% if controller.action_name == 'index' -%>
-          <p><%= link_to_permalink article, _("Continue reading...") %></p>
+          <p><%= link_to_permalink article, _("Continue reading...") %><img src="/images/theme/arrow-continue.png" /></p>
         <% else -%>
           <%= article.html(:extended) %>
         <% end -%>
