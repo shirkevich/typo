@@ -1,4 +1,9 @@
 <%= render :partial => 'articles/article', :collection => @articles %>
 
 
-<p class="pagination"><%= will_paginate @articles %></p>
+<p class="pagination">
+  <%= will_paginate @articles, 
+    :previous_label => '<img src="/images/theme/arrow-left.png" width="27" height="9" />', 
+    :next_label => '<img src="/images/theme/arrow-right.png" width="24" height="8" />' 
+  %>
+</p>
